@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="MaRiN" />
+    <meta name="description" content="We love JavaScript" />
+    <title>Demo App Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <h1 id="header" class="header">My Demo App</h1>
+
+      <form class="new-task-container box">
+        <label for="new-task">Add New Task</label>
+        <input type="text" id="new-task" />
+        <input type="submit" id="addTask" value="Submit" />
+      </form>
+
+      <div class="todo-list box">
+        <h2>Incomplete Info</h2>
+        <ul id="items">
+          <li class="item">
+            <input type="checkbox" /><label>Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Address</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Email</label>
+          </li>
+        </ul>
+      </div>
+      <!--/todo-list-->
+
+      <div class="complete-list box">
+        <h2>Completed Info</h2>
+        <ul>
+          <li class="item">Name <button class="delete">Delete</button></li>
+        </ul>
+      </div>
+      <!--/complete-list-->
+    </section>
+    <!--/container-->
+    <script src="script.js"></script>
+  </body>
+</html>
